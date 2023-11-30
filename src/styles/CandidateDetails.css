@@ -1,0 +1,155 @@
+.candidate-details-container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.left-container {
+    width: 30%;
+    height: 25rem;
+    margin-top: 40px;
+    padding: 15px 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #F4FF81;
+    border-radius: 15px 0 0 15px;
+}
+
+.right-container {
+    width: 45%;
+    height: 25rem;
+    padding: 15px 10px 2px 2px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #F4FF81;
+    border-radius: 0 15px 15px 0;
+
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    background: #FEBE10;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #dfa70c;
+}
+
+.email,
+.phone {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.email {
+    margin-top: 15px;
+}
+
+.email-img, .phone-img {
+    padding: 2px 15px 2px 2px;
+}
+
+#row-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px;
+    color: #333;
+
+
+}
+
+#row-box #box1 {
+    width: 25%;
+    font-weight: 500;
+}
+#row-box #box2 {
+    width: 75%;
+    font-weight: 350;
+}
+
+@media screen and (min-width: 1200px) {
+    .left-container {
+        width: 25%;
+    }
+    .right-container {
+        width: 40%;
+    }
+}
+  
+
+@media screen and (max-width: 796px) {
+    #row-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: #333;
+    }
+    #row-box #box1 {
+        width: 100%;
+        font-weight: 500;
+    }
+    #row-box #box2 {
+        width: 100%;
+        font-weight: 350;
+    }
+
+    .left-container {
+        height: 30rem;
+    }
+    .right-container {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .email, .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .candidate-details-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+    }
+    .left-container {
+        width: 50%;
+        height: 70%;
+        border-radius: 0;
+        padding-bottom: 10px;
+
+    }
+    .right-container {
+        width: 50%;
+        height: 80%;
+        border-radius: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+}
